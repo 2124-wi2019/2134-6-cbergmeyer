@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <title>Assignment #5, Task 2</title>
+  <meta charset='utf-8'>  
+  <link href='https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' type='text/css' href='style.css' />
+  <script src='converterhelper.js'></script>
+  <script src='script.js'></script>
+</head>
+<body> 
+    <h1>Convertor</h1>
+    <div id='errorHolder' class='hidden'>
+      <ul id='errorList'></ul>
+    </div>
+    <label for="userInput">Please input a numeric value:</label>
+    <input type="text" id="userInput" name="userInput" />
+    <div id="convertFromHolder" class="hidden">
+      <label for="convertFrom">Convert From</label>
+      <select id="convertFrom" name="convertFrom">
+        <option id=''>-- Select an Option --</option>
+        <option id='meters'>Meters</option>
+        <option id='liters'>Liters</option>
+        <option id='kilos'>Kilos</option>
+        <option id='celsius'>Celsius</option>
+      </select>
+    </div>
+    <div id="convertToHolder" class="hidden">
+      <label for="convertTo">Convert To</label>
+      <select type="text" id="convertTo" name="convertTo"></select> 
+    </div>
+    <br />
+    <div>
+      <a href='#' id='action'>Convert</a>
+    </div>
+    <br><br>
+    <div id='resultHolder'></div>
+    
+</body>
+</html>
